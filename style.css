@@ -40,6 +40,13 @@ a:visited {
     }
     .nav {
         display: block;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav {
+        display: block;
         font-size: 8px;
     }
 }
@@ -53,7 +60,7 @@ a:visited {
     background-color: #e5ffe7;
 }
 
-.br-lightgreen {
+.bg-lightgreen {
     background-color: #c3fbd8;
 }
 
@@ -77,7 +84,7 @@ a:visited {
 .container {
     max-width: 900px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 30px;
 }
 
@@ -85,7 +92,7 @@ a:visited {
     width: 235x;
     height: 200px;
     border-radius: 20%;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.8);
 }
 
 /* Основная информация */
@@ -170,18 +177,21 @@ a:visited {
 /* Дополнительная информация */
 .me {
     padding: 0px 20px 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
+/* Навигация */
 .nav {
-    width: 100%;
+    max-width: 900px;
     top: 0;
     position: fixed;
     display: flex;
+    font-weight: bold;
+    border-radius: 20px;
 }
 
 .nav a {
-    padding: 10px;
+    padding: 5px 10px;
     text-align: center;
     margin: auto;
 }
